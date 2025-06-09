@@ -1,58 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Eventos - Eventos Chiapas</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-  <header>
-    <h1>Eventos Chiapas</h1>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="eventos.html">Eventos</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
-  </header>
+  <div class="calculator">
+    <div id="display">0</div>
+    <div class="buttons">
+      <button class="btn clear" onclick="clearDisplay()">C</button>
+      <button class="btn" onclick="appendToDisplay('(')">(</button>
+      <button class="btn" onclick="appendToDisplay(')')">)</button>
+      <button class="btn operator" onclick="appendToDisplay('/')">÷</button>
 
-  <main>
-    <h1>Próximos Eventos</h1>
+      <button class="btn" onclick="appendToDisplay('7')">7</button>
+      <button class="btn" onclick="appendToDisplay('8')">8</button>
+      <button class="btn" onclick="appendToDisplay('9')">9</button>
+      <button class="btn operator" onclick="appendToDisplay('*')">×</button>
 
-    <!-- Evento 1 -->
-    <div class="evento">
-      <h2>Feria del Café</h2>
-      <p><strong>Fecha:</strong> 15 de julio de 2025</p>
-      <p><strong>Ubicación:</strong> Tuxtla Gutiérrez, Chiapas</p>
-      <p>Una celebración de la cultura cafetera con exhibiciones, música y degustaciones.</p>
+      <button class="btn" onclick="appendToDisplay('4')">4</button>
+      <button class="btn" onclick="appendToDisplay('5')">5</button>
+      <button class="btn" onclick="appendToDisplay('6')">6</button>
+      <button class="btn operator" onclick="appendToDisplay('-')">−</button>
+
+      <button class="btn" onclick="appendToDisplay('1')">1</button>
+      <button class="btn" onclick="appendToDisplay('2')">2</button>
+      <button class="btn" onclick="appendToDisplay('3')">3</button>
+      <button class="btn operator" onclick="appendToDisplay('+')">+</button>
+
+      <button class="btn" onclick="appendToDisplay('0')">0</button>
+      <button class="btn" onclick="appendToDisplay('.')">.</button>
+      <button class="btn equal" onclick="calculate()">=</button>
     </div>
+  </div>
 
-    <!-- Evento 2 -->
-    <div class="evento">
-      <h2>Festival de la Marimba</h2>
-      <p><strong>Fecha:</strong> 28 de agosto de 2025</p>
-      <p><strong>Ubicación:</strong> San Cristóbal de las Casas</p>
-      <p>Evento musical que reúne a los mejores marimbistas de la región. Entrada gratuita.</p>
-    </div>
-
-    <!-- Evento 3 -->
-    <div class="evento">
-      <h2>Expo Artesanal Chiapas</h2>
-      <p><strong>Fecha:</strong> 10 de septiembre de 2025</p>
-      <p><strong>Ubicación:</strong> Comitán de Domínguez</p>
-      <p>Muestra de artesanías tradicionales chiapanecas y productos locales.</p>
-    </div>
-
-    <!-- Puedes seguir agregando más eventos así -->
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Eventos Chiapas. Todos los derechos reservados.</p>
-  </footer>
+  <script src="script.js"></script>
 
 </body>
-
 </html>
